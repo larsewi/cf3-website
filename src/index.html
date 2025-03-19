@@ -9,7 +9,7 @@
       <table>
 [%CFEngine data:prod_host:: %]
         <caption>Production host info:</caption>
-[%CFEngine data:test_host:: %]
+[%CFEngine !data:prod_host:: %]
         <caption>Test host info:</caption>
 [%CFEngine any:: %]
         <tr>
@@ -36,5 +36,6 @@
         </tr>
       </table>
     </p>
+    <p>Testing</p>
   </body>
 </html>
